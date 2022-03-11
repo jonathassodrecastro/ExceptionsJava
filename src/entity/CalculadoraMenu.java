@@ -79,11 +79,19 @@ public class CalculadoraMenu extends CalculadoraMetodos {
                     novaOperacao = scanner.next();
                 }
 
+            if(novaOperacao.equals("N")){
+                System.out.println("\nAté a próxima!");
+
+            }else if(!novaOperacao.equals("S")){
+                System.out.println("Informe a resposta utilizando S ou N");
+                novaOperacao = scanner.next();
+            }
+
+        } while (novaOperacao.equals("S"));
 
 
 
-        } while (novaOperacao == null || novaOperacao.equals("S"));
-        System.out.println("\nAté a próxima!");
+
 
     }
 }
