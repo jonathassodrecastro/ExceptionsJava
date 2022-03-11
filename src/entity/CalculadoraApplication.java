@@ -56,7 +56,7 @@ public class CalculadoraApplication {
                     novaOperacao = scanner.next();
                 }
             }
-            while (/*novaOperacao == null || */novaOperacao.equals("S"));
+            while (novaOperacao == null || novaOperacao.equals("S"));
             System.out.println("\nAté a próxima!");
 
 

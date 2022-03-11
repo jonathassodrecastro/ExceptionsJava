@@ -1,7 +1,5 @@
 package entity;
 
-import exceptions.CalculadoraExceptions;
-
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -100,7 +98,7 @@ public class CalculadoraMetodos {
         resultado = primeiroNum / segundoNum;
         System.out.printf("\nO resultado de %d dividido por %d é igual a %d", primeiroNum, segundoNum, resultado);
     } catch (ArithmeticException e) {
-                System.out.println("\nErro na divisão. O Divisor é igual a 0! "+"Motivo"+e.getMessage());
+                System.out.println("\nErro na divisão. O Divisor é igual a 0! "/*+"Motivo"+e.getMessage()*/);
     }
 
     }
